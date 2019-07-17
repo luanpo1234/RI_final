@@ -96,8 +96,8 @@ print(df3.groupby(df3.tag).count())
 print("Número de termos com cada tag, incluindo bigramas:\n\n")
 print(df2.groupby(df2.tag).count())
 ###Gerando wordclouds:
-#Sem filtro, sem bigramas:
 
+#Sem filtro, sem bigramas:
 plot_wcs_from_text(dfs, "preprocessed_desc", collocations=False,
                         save_path="img/wc", color_func=simple_color_func)
 
