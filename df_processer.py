@@ -45,7 +45,7 @@ media_por_bairro = [(el, df.loc[df.address==el].price.mean(), df.loc[df.address=
                      price.count()) for el in df.address.unique() if el is not None]
 
 
-#Muitos bairros têm poucas observações; abaixo somente aqueles com n>40, ordenados por preço:
+#Muitos bairros têm poucas observações; abaixo somente aqueles com n>30, ordenados por preço:
 mb = sorted([el for el in media_por_bairro if el[2] >= 30], key = lambda x: x[1])
 if __name__== "__main__":
     bairros_baratos, bairros_caros = mb[0:5], mb[-5:][::]
