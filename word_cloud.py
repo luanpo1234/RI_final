@@ -91,9 +91,9 @@ def plot_wcs_from_text(ranges, col, stopwords=None, collocations=False,
 
 df3.dropna(inplace=True)
 df2.dropna(inplace=True)
-print("Número de termos com cada tag, sem incluir bigramas:\n\n")
+print("\n Número de termos com cada tag, sem incluir bigramas:\n\n")
 print(df3.groupby(df3.tag).count())
-print("Número de termos com cada tag, incluindo bigramas:\n\n")
+print("\n Número de termos com cada tag, incluindo bigramas:\n\n")
 print(df2.groupby(df2.tag).count())
 ###Gerando wordclouds:
 
